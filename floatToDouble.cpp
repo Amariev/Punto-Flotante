@@ -1,24 +1,4 @@
-#include <cstring>
-#include "floatToBinary.h"
-
-using namespace std;
-
-double floatToDouble(float f);
-double btd(string str);
-double bitstringToDouble(const string& s);
-
-int main(){
-  float f = 32.72f;
-  double d = (double)f;
-  
-  int* q = (int*)&f;
-  bitset<sizeof(float)*8> b(*q);
-
-  unsigned long long* p = (unsigned long long*)&d;
-  bitset<sizeof(double)*8> bits(*p);
-  // c++ solo agrega ceros al final
-    return 0;
-}
+#include "floatToDouble.h"
 
 double floatToDouble(float f){
   string str = floatToBinary(f);
