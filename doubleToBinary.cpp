@@ -1,7 +1,5 @@
 #include "doubleToBinary.h"
 
-string doubleToBinary(double d);
-
 // corregir si es cercano a cero
 string doubleToBinary(double d){
   string str;

@@ -13,5 +13,6 @@ string cambioDeBaseEntero(int n);
 string cambioDeBaseDecimal(float f, const int size);
 string cambioDeBaseDecimal(double f, const int size);
 string cambioBiased(int n,const int size);
+int binaryToDecimal(string str);
 
 #endif

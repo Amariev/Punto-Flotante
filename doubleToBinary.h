@@ -3,5 +3,5 @@
 
 #include "tools.h"
 
-string floatToBinary(float f);
+string doubleToBinary(double d);
 #endif

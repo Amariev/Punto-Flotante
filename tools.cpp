@@ -1,4 +1,5 @@
 #include "tools.h"
+#include <math.h>
 
 string cambioDeBaseEntero(int n){
   string str;
@@ -41,4 +42,17 @@ string cambioBiased(int n,const int size){
   int num = (n-1) + ((pow(2, size-1))-1);
   str = cambioDeBaseEntero(num);
   return str;
+}
+
+int binaryToDecimal(string str){
+  int i = 0;
+  int cont = str.size()-1;
+  for (int j = 0; j < (int)str.size() ; j++) {
+    if (str[j] == '1') {
+      i+=pow(2, cont);
+    }
+    cont--;
+  }
+  
+  return i;
 }
